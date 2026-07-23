@@ -4,9 +4,9 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                               M. B. Jones
-Expires: 3 September 2026                         Self-Issued Consulting
-                                                            2 March 2026
+Intended status: Standards Track                             M. B. Jones
+Expires: 24 January 2027                          Self-Issued Consulting
+                                                            23 July 2026
 
 
     OpenID Connect Standard Claims Registration for CBOR Web Tokens
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 September 2026.
+   This Internet-Draft will expire on 24 January 2027.
 
 Copyright Notice
 
@@ -285,7 +285,7 @@ Table of Contents
 
    Claim Name:  zoneinfo
    Claim Description:  String from IANA Time Zone Database
-      [IANAtimezones] representing the End-User's time zone.
+      [IANA.TimeZones] representing the End-User's time zone.
    JWT Claim Name:  zoneinfo
    Claim Key:  TBD14 (183 suggested)
    Claim Value Type(s):  text string
@@ -433,13 +433,13 @@ Table of Contents
               IANA, "CBOR Web Token (CWT) Claims",
               <https://www.iana.org/assignments/cwt>.
 
-   [IANAtimezones]
-              "IANA time zones", n.d.,
-              <https://www.iana.org/time-zones>.
+   [IANA.TimeZones]
+              IANA, "Time Zones", <https://www.iana.org/time-zones>.
 
    [ISO8601_1]
-              "ISO8601-1", n.d.,
-              <https://www.iso.org/standard/81801.html>.
+              ISO, "ISO8601-1: Date and time — Representations for
+              information interchange — Part 1: Basic rules", October
+              2022, <https://www.iso.org/standard/81801.html>.
 
    [OpenID.Core]
               Sakimura, N., Bradley, J., Jones, M. B., Medeiros, B. de.,
@@ -470,19 +470,19 @@ Table of Contents
 
 6.2.  Informative References
 
-   [CDDL]     Birkholz, H., Vigano, C., and C. Bormann, "Concise Data
+   [RFC7519]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web Token
+              (JWT)", RFC 7519, DOI 10.17487/RFC7519, May 2015,
+              <https://www.rfc-editor.org/rfc/rfc7519>.
+
+   [RFC8610]  Birkholz, H., Vigano, C., and C. Bormann, "Concise Data
               Definition Language (CDDL): A Notational Convention to
               Express Concise Binary Object Representation (CBOR) and
               JSON Data Structures", RFC 8610, DOI 10.17487/RFC8610,
               June 2019, <https://www.rfc-editor.org/rfc/rfc8610>.
 
-   [RFC7519]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web Token
-              (JWT)", RFC 7519, DOI 10.17487/RFC7519, May 2015,
-              <https://www.rfc-editor.org/rfc/rfc7519>.
-
 Appendix A.  CDDL Schema
 
-   The following CDDL Schema [CDDL] includes example values for each
+   The following CDDL Schema [RFC8610] includes example values for each
    item.
 
    oidc-claims = {
@@ -549,6 +549,10 @@ Acknowledgments
    David Waite.
 
 Document History
+
+   -06
+
+   *  Changed from informational to standards track.
 
    -05
 
