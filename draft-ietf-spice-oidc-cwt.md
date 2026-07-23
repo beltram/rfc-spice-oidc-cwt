@@ -1,7 +1,7 @@
 ---
 title: "OpenID Connect Standard Claims Registration for CBOR Web Tokens"
 abbrev: "OpenID Connect Standard Claims for CWT"
-category: info
+category: std
 
 docname: draft-ietf-spice-oidc-cwt-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
@@ -14,6 +14,8 @@ workgroup: "Secure Patterns for Internet CrEdentials"
 keyword:
  - Openid Connect
  - Standard Claims
+ - CBOR Web Token
+ - CWT
 venue:
   group: "Secure Patterns for Internet CrEdentials"
   type: "Working Group"
@@ -36,23 +38,29 @@ author:
     country: United States
 
 normative:
-    OpenID.Core:
-        target: https://openid.net/specs/openid-connect-core-1_0.html
-        title: "OpenID Connect Core 1.0 incorporating errata set 2"
-        date: 2023-12-15
-        author:
-            - name: Nat Sakimura
-            - name: John Bradley
-            - name: Michael B. Jones
-            - name: Breno de Medeiros
-            - name: Chuck Mortimore
-    IANAtimezones:
-        target: https://www.iana.org/time-zones
-        title: "IANA time zones"
-    ISO8601‑1:
-        target: https://www.iso.org/standard/81801.html
-        title: "ISO8601‑1"
-    IANA.CWT.Claims: IANA.cwt
+  OpenID.Core:
+    target: https://openid.net/specs/openid-connect-core-1_0.html
+    title: "OpenID Connect Core 1.0 incorporating errata set 2"
+    date: 2023-12-15
+    author:
+      - name: Nat Sakimura
+      - name: John Bradley
+      - name: Michael B. Jones
+      - name: Breno de Medeiros
+      - name: Chuck Mortimore
+  IANA.TimeZones:
+      target: https://www.iana.org/time-zones
+      title: "Time Zones"
+      author:
+      - org: IANA
+      date: false
+  ISO8601‑1:
+    target: https://www.iso.org/standard/81801.html
+    title: "ISO8601‑1: Date and time — Representations for information interchange — Part 1: Basic rules"
+    author:
+      - org: ISO
+    date: 2022-10
+  IANA.CWT.Claims: IANA.cwt
 
 informative:
 
@@ -408,7 +416,7 @@ Claim Name:
 : zoneinfo
 
 Claim Description:
-: String from IANA Time Zone Database {{IANAtimezones}} representing the End-User's time zone.
+: String from IANA Time Zone Database {{IANA.TimeZones}} representing the End-User's time zone.
 
 JWT Claim Name:
 : zoneinfo
