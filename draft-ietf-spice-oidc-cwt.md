@@ -63,6 +63,7 @@ normative:
   IANA.CWT.Claims: IANA.cwt
 
 informative:
+  RFC8610:
 
 --- abstract
 
@@ -614,6 +615,10 @@ David Waite.
 
 # Document History
 {: numbered="false"}
+
+-06
+
+* Changed from informational to standards track.
 
 -05
 
