@@ -593,7 +593,7 @@ In case any of the suggested code points would have been claimed by the time the
 
 # CDDL Schema {#cddl}
 
-The following CDDL Schema {{?CDDL=RFC8610}} includes example values for each item.
+The following CDDL Schema {{RFC8610}} includes example values for each item.
 
 ~~~~~~~~~~
 {::include ./oidc-claims.cddl}
